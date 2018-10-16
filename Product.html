@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>杭州物必连科技有限公司</title>
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<link rel="apple-touch-icon" sizes="180x180" href="img/icon.jpg">
+		<link rel="icon" type="image/png" sizes="32x32" href="img/icon.jpg">
+		<link rel="stylesheet" href="css/first.css" />
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<script>
+			$(function() {
+				if(localStorage.getItem("cp")){
+//					let aa="."+localStorage.getItem("cp");
+					let bb="#"+localStorage.getItem("cp");
+//					$(".nav-tabs li").removeClass("active");
+					$(".tab-content .tab-pane").removeClass("active");
+//					$(aa).addClass("active");
+					$(bb).addClass("active");
+				}
+				$('li.dropdown').mouseover(function() {
+					$(this).addClass('open');
+				}).mouseout(function() {
+					$(this).removeClass('open');
+				});
+			});
+		</script>
+		<style>
+			.jumbotron{
+				border: 1px solid #555555;
+				border-radius: 20px;
+			}
+			.nav-tabs>li{
+				margin-bottom: 0;
+				border: none;
+				padding: 0 10px 0 10px;
+			}
+			.nav-tabs>li>a:hover,
+			.nav-tabs > li.active > a,
+			.nav-tabs > li.active > a:hover,
+			.nav-tabs > li.active > a:focus {
+				background:#2750a2 ;
+				color: white;
+			}
+			.nav-tabs>li>a{
+				border: none;
+				font-size: 30px;
+				color: black;
+				border-radius: 4px 4px 4px 4px;
+			}
+			.nav-tabs>li>a:focus{
+				background-color: #b7c2c8;
+				border: none;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="header">
+			<nav class="navbar navbar-default navbar-fixed-top">
+				<div class="container-fluid">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+		                    <span class="sr-only">Toggle navigation</span>
+		                    <span class="icon-bar"></span>
+		                    <span class="icon-bar"></span>
+		                    <span class="icon-bar"></span>
+		                </button>
+		                <!--<a class="navbar-brand" href="#">-->
+		                	<img src="img/icon1.png" style="max-width: 100px;padding: 5px 0 2px 30px;" />
+		                <!--</a>-->
+					</div>
+					<div class="collapse navbar-collapse" id="banner">
+						<ul class="nav navbar-nav navbar-left nav-pills" style="margin-right: -15px;padding-left: 5%;padding-top: 1%;">
+							<li class="dropdown">
+								<a class="dropdown" href="index.html"><span class="s-font-body">首页</span></a>
+							</li>
+							<li class="dropdown">
+								<a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="s-font-body">关于我们</span></a>
+								<ul class="dropdown-menu list-group">
+									<li><a href="companyProfile.html" class="active">公司简介</a></li>
+									<li><a href="honor.html" class="active">荣誉资质</a></li>
+									<!--<li><a href="qyyj.html" class="active">企业愿景</a></li>-->
+									<li><a href="#" class="active">合作伙伴</a></li>
+									<!--<li><a href="jcbg.html" class="active"></a></li>-->
+								</ul>
+							</li>
+							<li class="dropdown">
+								<a class="dropdown" href="#" data-toggle="dropdown"><span class="s-font-body">产品中心</span></a>
+								<ul class="dropdown-menu list-group cp" role="menu">
+									<li><a class="active" href="Product.html">RFID天线</a></li>
+									<li><a class="active" href="Product.html">固定式读写器</a></li>
+									<li><a class="active" href="Product.html">手持终端系列</a></li>
+									<li><a class="active" href="Product.html">行业应用产品</a></li>
+									<li><a class="active" href="Product.html">有源RFID系列</a></li>
+									<li><a class="active" href="Product.html">超高频RFID标签</a></li>
+								</ul>
+							</li>
+							<li class="dropdown">
+								<a class="dropdown" href="#" data-toggle="dropdown"><span class="s-font-body">解决方案</span></a>
+								<ul class="dropdown-menu list-group" role="menu">
+									<li><a href="project.html" class="active">概述</a></li>
+									<li><a href="overview.html" class="active">RFID智慧工器具管理系统</a></li>
+									<li><a href="zcxj.html" class="active">RFID电力资产巡检系统</a></li>
+									<li><a href="ccgl.html" class="active">RFID仓储管理系统</a></li>
+									<li><a href="znggl.html" class="active">RFID智能柜管理系统</a></li>
+									<li><a href="lsgl.html" class="active">RFID无人零售管理系统</a></li>
+								</ul>
+							</li>
+							<li class="dropdown">
+								<a class="dropdown" href="#" data-toggle="dropdown"><span class="s-font-body">售后服务</span></a>
+								<ul class="dropdown-menu list-group">
+									<li><a href="fwzc.html" class="active">服务支持</a></li>
+									<li><a href="#" class="active">培训指导</a></li>
+								</ul>
+							</li>
+							<li class="dropdown">
+								<a class="dropdown" href="lxwm.html"><span class="s-font-body">联系我们</span></a>
+							</li>
+						</ul>
+						<ul class="nav navbar-nav navbar-right" style="margin-top: 12px;">
+							<li>
+								<a href="mailto:dhw@wbliot.com?subject=test&cc=sample@hotmail.com&subject=主题&body=内容">企业邮箱</a>
+							</li>
+							<li>
+								<a>|</a>
+							</li>
+							<li class="dropdown">
+								<a class="dropdown" href="#" data-toggle="dropdown">官方微信</a>
+								<div class="dropdown-menu list-group" style="width: 150px;padding: 0;">
+									<img src="img/QRCode.jpg " class="img-thumbnail" />
+								</div>
+							</li>
+					        <li class="dropdown" style="float: right;position: relative;">
+								<div class="input-group" style="width: 200px;margin-top: 8px;">
+		                            <input type="text" id="sosuo" class="form-control"><span id="search" class="input-group-addon btn btn-primary"><span  class="glyphicon glyphicon-search" style="font-size: 13px;"></span></span>
+								</div>
+							</li>
+					    </ul>
+					</div>
+				</div>
+			</nav>
+			<img src="img/产品.png" width="100%" style="margin-top: 70px;">
+		</div>
+		
+		<br  />
+		<div class="container">
+			  <!-- Nav tabs -->
+			  <ul class="nav nav-tabs" role="tablist" style="border-bottom:none;display: none;">
+			    <li role="presentation" class="active 固定式读写器"><a href="#固定式读写器" aria-controls="固定式读写器" role="tab" data-toggle="tab">固定式读写器</a></li>
+			    <li role="presentation" class="RFID天线"><a href="#RFID天线" aria-controls="RFID天线" role="tab" data-toggle="tab">RFID天线</a></li>
+			    <li role="presentation" class="手持终端系列"><a href="#手持终端系列" aria-controls="手持终端系列" role="tab" data-toggle="tab">手持终端系列</a></li>
+			    <li role="presentation" class="行业应用产品"><a href="#行业应用产品" aria-controls="行业应用产品" role="tab" data-toggle="tab">行业应用产品</a></li>
+			    <li role="presentation" class="有源RFID系列"><a href="#有源RFID系列" aria-controls="有源RFID系列" role="tab" data-toggle="tab">有源RFID系列</a></li>
+			  	<li role="presentation" class="超高频RFID标签"><a href="#超高频RFID标签" aria-controls="超高频RFID标签" role="tab" data-toggle="tab">超高频RFID标签</a></li>
+			  </ul>
+			
+			  <!-- Tab panes -->
+			  <div class="tab-content">
+			    <div role="tabpanel" class="tab-pane active" id="固定式读写器">
+			    	<br />
+			    	<div class="container jumbotron" style="background-color: white;">
+			    		<a href="UR8800gdsdxq.html" >
+			    			<button class="btn btn-primary" style="position: relative;float: right;">more</button>
+						</a>
+						<div class="col-sm-6">
+							<img src="img/product1.png" class="img-thumbnail" style="width: 70%;" />
+						</div>
+						<div class="col-sm-6">
+							<div>
+								<h3 style="text-align: center;font-size: 18px;"><strong>WB-UR8800 固定式读写器</strong></h3>
+							</div>
+							<div style="text-align: center;color:rgb(90, 123, 187);">
+								<font>WB-UR8800 Fixed Reader</font>
+							</div>
+							<h4><strong>主要特性:</strong></h4>
+							<p style="font-size: 15px;">
+								工作频段支持902-928Mhz</br>
+								兼容EPC C1 Gen2/ISO 18000-6C以及ISO18000-6B协议</br>
+								支持多标签模式群读</br>
+								远距离读取，RF输出功率达到32.5dBm</br>
+								支持4路天线接口</br>
+								支持640Kbps标签数据读取速率</br>
+								配置以及参数设定灵活，提供最大化标签阅读量和最佳工作性能
+							</p>
+						</div>
+					</div>
+					<div class="container jumbotron" style="background-color: white;">
+						<a href="RFIDytj.html">
+							<button class="btn btn-primary" style="position: relative;float: right;">more</button>
+						</a>
+						<div class="col-sm-6">
+							<div>
+								<h3 style="text-align: center;font-size: 18px;"><strong>WB-UR8809 一体机</strong></h3>
+							</div>
+							<div style="text-align: center;color:rgb(90, 123, 187);">
+								<font>WB-UR8809 Integrated Reader</font>
+							</div>
+							<h4><strong>主要特性:</strong></h4>
+							<p style="font-size: 15px;">
+								902-928MHz RFID射频识别系统</br>
+								可定制欧标（865-867MHZ）</br>
+								产品美观、重量轻、体积小、低剖面、安装使用方便</br>
+								读写速度快、多标签识读、数据安全性高、读写距离远</br>
+								防水等级：IP67
+							</p>
+						</div>
+						<div class="col-sm-6">
+							<img src="img/PFIDytj.png" class="img-thumbnail" style="width: 70%;" />
+						</div>
+					</div>
+					<div class="container jumbotron" style="background-color: white;">
+						<a href="WB-EV700zmdxq.html">
+							<button class="btn btn-primary" style="position: relative;float: right;">more</button>
+						</a>
+						<div class="col-sm-6">
+							<img src="img/product2.png" class="img-thumbnail" style="width: 70%;" />
+						</div>
+						<div class="col-sm-6">
+							<div>
+								<h3 style="text-align: center;font-size: 18px;"><strong>WB-EV700 桌面式读写器</strong></h3>
+							</div>
+							<div style="text-align: center;color:rgb(90, 123, 187);">
+								<font>WB-EV700 Desktop Reader</font>
+							</div>
+							<h4><strong>主要特性:</strong></h4>
+							<p style="font-size: 15px;">
+								符合EPC C1 GEN2/ISO18000-6C协议标准</br>
+								良好的防冲撞机制，可同时读取多个900M无源电子标签</br>
+								电源及工作状态指示</br>
+							</p>
+						</div>
+					</div>
+			    </div>
+			    <div role="tabpanel" class="tab-pane" id="RFID天线">
+			    	<br />
+			    	<div class="container jumbotron" style="background-color: white;">
+			    		<a href="WB-US608UHFtxfzq.html">
+			    			<button class="btn btn-primary" style="position: relative;float: right;">more</button>
+						</a>
+						<div class="col-sm-6">
+							<div>
+								<h3 style="text-align: center;font-size: 18px;"><strong>WB-US608 UHF天线分支器</strong></h3>
+							</div>
+							<div style="text-align: center;color:rgb(90, 123, 187);">
+								<font>WB-US608 UHF Antenna Switch</font>
+							</div>
+							<h4><strong>主要特性:</strong></h4>
+							<p style="font-size: 15px;">
+								1路信号输入，8路信号输出</br>
+								RS485进行级联，可实现多个子分支器的任意接入</br>
+								实时提供当前天线连接情况，从而完成将 UHF 读写器的一路射频切换到多路天线中任意一个输出
+							</p>
+						</div>
+						<div class="col-sm-6">
+							<img src="img/product3.png" class="img-thumbnail" style="width: 70%;" />
+						</div>
+					</div>
+					<div class="container jumbotron" style="background-color: white;">
+						<a href="9dbtx.html">
+							<button class="btn btn-primary" style="position: relative;float: right;">more</button>
+						</a>
+						<div class="col-sm-6">
+							<img src="img/WBAN260Ppbtx.png" class="img-thumbnail" style="width: 70%;" />
+						</div>
+						<div class="col-sm-6">
+							<div>
+								<h3 style="text-align: center;font-size: 18px;"><strong>WB-AN609 9db天线</strong></h3>
+							</div>
+							<div style="text-align: center;color:rgb(90, 123, 187);">
+								<font>WB-AN609 9db Antenna</font>
+							</div>
+							<h4><strong>主要特性:</strong></h4>
+							<p style="font-size: 15px;">
+								902-928MHz RFID 射频识别系统<br />
+								可定制欧标（860-868MHz）或其它标准</br>
+								产品美观、重量轻、安装使用方便</br>
+								读写速度快、多标签识读、数据平稳、读写距离远</br>
+								防水等级：IP67
+							</p>
+						</div>
+					</div>
+					<div class="container jumbotron" style="background-color: white;">
+						<a href="12dbtx.html">
+							<button class="btn btn-primary" style="position: relative;float: right;">more</button>
+						</a>
+						<div class="col-sm-6">
+							<div>
+								<h3 style="text-align: center;font-size: 18px;"><strong>WB-AN612 12db天线</strong></h3>
+							</div>
+							<div style="text-align: center;color:rgb(90, 123, 187);">
+								<font>WB-AN612 12db Antenna</font>
+							</div>
+							<h4><strong>主要特性:</strong></h4>
+							<p style="font-size: 15px;">
+								全天候室外工作，防水性能好</br>
+								读写速度快、数据安全性高、使用方便，读写距离远</br>
+							</p>
+						</div>
+						<div class="col-sm-6">
+							<img src="img/12db.png" class="img-thumbnail" style="width: 70%;" />
+						</div>
+					</div>
+			    </div>
+			    <div role="tabpanel" class="tab-pane" id="手持终端系列">
+			    	<br />
+			    	<div class="container jumbotron" style="background-color: white;">
+			    		<a href="WB-HD900scj.html">
+			    			<button class="btn btn-primary" style="position: relative;float: right;">more</button>
+						</a>
+						<div class="col-sm-6">
+							<img src="img/product5.png" class="img-thumbnail" style="width: 70%;" />
+						</div>
+						<div class="col-sm-6">
+							<div>
+								<h3 style="text-align: center;font-size: 18px;"><strong>WB-HD900 手持机</strong></h3>
+							</div>
+							<div style="text-align: center;color:rgb(90, 123, 187);">
+								<font>WB-HD900 Handheld Reader</font>
+							</div>
+							<h4><strong>主要特性:</strong></h4>
+							<p style="font-size: 15px;">
+								支持900M无源电子标签读取、工作频段902-928MHz可配</br>
+								天线外壳，远距离盘点，标准白卡读卡距离可达5米以上</br>
+								外置枪柄，双电池设计，确保优越的续航能力</br>
+								支持一维码、二维码扫描功能，摄像头采集功能（选配）</br>
+								支持全网通3G/4G传输、wifi传输、GPS定位功能等</br>
+							</p>
+						</div>
+					</div>
+					<div class="container jumbotron" style="background-color: white;">
+						<a href="pb.html">
+							<button class="btn btn-primary" style="position: relative;float: right;">more</button>
+						</a>
+						<div class="col-sm-6">
+							<div>
+								<h3 style="text-align: center;font-size: 18px;"><strong>WB-HD910 平板</strong></h3>
+							</div>
+							<div style="text-align: center;color:rgb(90, 123, 187);">
+								<font>WB-HD910 PAD</font>
+							</div>
+							<h4><strong>主要特性:</strong></h4>
+							<p style="font-size: 15px;">
+								MSM 4核高速处理器，1.2GHz</br>
+								7"电容式触摸屏，分辨率1280*800，屏幕有水或戴手套均可操作</br>
+								符合IP67防护等级，抗1.2米自然跌落</br>
+								支持蓝牙、WIFI、3G</br>
+								RFID可选高频(HF)指标、超高频(UHF)指标
+							</p>
+						</div>
+						<div class="col-sm-6">
+							<img src="img/pb.png" class="img-thumbnail" style="width: 70%;" />
+						</div>
+					</div>
+			    </div>
+			    <div role="tabpanel" class="tab-pane" id="行业应用产品">
+			    	<br />
+			    	<div class="container jumbotron" style="background-color: white;">
+			    		<a href="gzt.html">
+			    			<button class="btn btn-primary" style="position: relative;float: right;">more</button>
+						</a>
+						<div class="col-sm-6">
+							<img src="img/gzt.png" class="img-thumbnail" style="width: 70%;" />
+						</div>
+						<div class="col-sm-6">
+							<div>
+								<h3 style="text-align: center;font-size: 18px;"><strong>WB-GZ9200 工作台</strong></h3>
+							</div>
+							<div style="text-align: center;color:rgb(90, 123, 187);">
+								<font>WB-GZ9200 Workbench</font>
+							</div>
+							<h4><strong>主要特性:</strong></h4>
+							<p style="font-size: 15px;">
+								兼容EPC C1 Gen2/ISO 18000-6C</br>
+								Impinj R500</br>
+								内嵌7dBi圆极化天线</br>
+								较远距离读取，RF输出功率达到23dBm</br>
+								配置以及参数设定灵活，提供最大化标签阅读量和最佳工作性能
+							</p>
+						</div>
+					</div>
+					<div class="container jumbotron" style="background-color: white;">
+						<a href="tdm.html">
+							<button class="btn btn-primary" style="position: relative;float: right;">more</button>
+						</a>
+						<div class="col-sm-6">
+							<div>
+								<h3 style="text-align: center;font-size: 18px;"><strong>WB-TD9000 通道门</strong></h3>
+							</div>
+							<div style="text-align: center;color:rgb(90, 123, 187);">
+								<font>WB-TD9000 Access Door</font>
+							</div>
+							<h4><strong>主要特性:</strong></h4>
+							<p style="font-size: 15px;">
+								流线性：主体框架采用仿塑材料、侧板采用水晶板</br>
+								兼容性：可同时识别EM磁条、RFID芯片，无干扰</br>
+								稳定性：采用软件控制技术，稳定性好</br>
+								灵敏度：采用DMPD、RFID技术，报警灵敏、安全可靠<br />
+								目的性：图书馆旧书继续采用EM磁条，新书采用RFID标签，可大量节约因更换旧书内磁条为RFID标签的费用，同时达到图书馆无障碍使用RFID新产品的目的
+							</p>
+						</div>
+						<div class="col-sm-6">
+							<img src="img/tdm.png" class="img-thumbnail" style="width: 70%;" />
+						</div>
+					</div>
+					<div class="container jumbotron" style="background-color: white;">
+						<a href="jst.html">
+							<button class="btn btn-primary" style="position: relative;float: right;">more</button>
+						</a>
+						<div class="col-sm-6">
+							<img src="img/jst.png" class="img-thumbnail" style="width: 70%;" />
+						</div>
+						<div class="col-sm-6">
+							<div>
+								<h3 style="text-align: center;font-size: 18px;"><strong>WB-JS9100 结算台</strong></h3>
+							</div>
+							<div style="text-align: center;color:rgb(90, 123, 187);">
+								<font>WB-JS9100 Checkout Counter</font>
+							</div>
+							<h4><strong>主要特性:</strong></h4>
+							<p style="font-size: 15px;">
+								内嵌R2000 模块，圆极化天线</br>
+								亚克力磨砂蓝光设计</br>
+								支持超高频RFID 多标签读取</br>
+							</p>
+						</div>
+					</div>
+					<div class="container jumbotron" style="background-color: white;">
+						<a href="zng.html">
+							<button class="btn btn-primary" style="position: relative;float: right;">more</button>
+						</a>
+						<div class="col-sm-6">
+							<div>
+								<h3 style="text-align: center;font-size: 18px;"><strong>WB-ZN9300 智能柜</strong></h3>
+							</div>
+							<div style="text-align: center;color:rgb(90, 123, 187);">
+								<font>WB-ZN9300 Smart Cabinet</font>
+							</div>
+							<h4><strong>主要特性:</strong></h4>
+							<p style="font-size: 15px;">
+								电子标签（RFID）管理</br>
+								定时盘库</br>
+								可根据实际情况增、减主（副）柜格数</br>
+								32寸触摸显示屏，操作简单便于管理<br />
+								RFID员工卡身份确认<br />
+								监控功能、报警功能、语音功能、联网功能等<br />
+								可适配指纹验证
+							</p>
+						</div>
+						<div class="col-sm-6">
+							<img src="img/zng.png" class="img-thumbnail" style="width: 70%;" />
+						</div>
+					</div>
+			    </div>
+			    <div role="tabpanel" class="tab-pane" id="有源RFID系列">
+			    	<br />
+			    	<div class="container jumbotron" style="background-color: white;">
+			    		<a href="WB-AR200yygdsdxq.html">
+			    			<button class="btn btn-primary" style="position: relative;float: right;">more</button>
+						</a> 
+						<div class="col-sm-6">
+							<div>
+								<h3 style="text-align: center;font-size: 18px;"><strong>WB-AR200 有源固定式读写器</strong></h3>
+							</div>
+							<div style="text-align: center;color:rgb(90, 123, 187);">
+								<font>WB-AR200 Active Fixed Reader</font>
+							</div>
+							<h4><strong>主要特性:</strong></h4>
+							<p style="font-size: 15px;">
+								工作2.4G频段、支持有源标签群读</br>
+								支持Passive PoE，以太网线供电，网络布线更灵活</br>
+								外壳采用铸铝材质，IP67防护等级</br>
+								安装方式灵活多样，支持抱杆、墙面安装</br>
+								识别距离2~150m可调</br>
+								识别速度100 公里/ 小时</br>
+								高增益全向天线</br>
+								灵活的RF控制：接收 32 级可调、发射 4 级可调</br>
+								最高支持2Mbps空中通信速率</br>
+								配置以及参数设定灵活，提供最大化标签阅读量和最佳工作性能</br>
+							</p>
+						</div>
+						<div class="col-sm-6">
+							<img src="img/product6.png" class="img-thumbnail" style="width: 70%;" />
+						</div>
+					</div>
+					<div class="container jumbotron" style="background-color: white;">
+						<a href="WB-T160dpbq.html">
+							<button class="btn btn-primary" style="position: relative;float: right;">more</button>
+						</a>
+						<div class="col-sm-6">
+							<img src="img/product7.png" class="img-thumbnail" style="width: 70%;" />
+						</div>
+						<div class="col-sm-6">
+							<div>
+								<h3 style="text-align: center;font-size: 18px;"><strong>WB-T160 单频标签</strong></h3>
+							</div>
+							<div style="text-align: center;color:rgb(90, 123, 187);">
+								<font>WB-T160 Active Tag</font>
+							</div>
+							<h4><strong>主要特性:</strong></h4>
+							<p style="font-size: 15px;">
+								读卡距离1~150m可调</br>
+								采用频道隔离技术，多个标签互不干扰</br>
+								电压检测，欠压报警</br>
+								超低功耗，使用寿命可达3年</br>
+								体积小巧，方便携带</br>
+								<h4>应用场景</h4> 可广泛应用于电动车管理、人员管理、智能仓储、园区门禁、智能交通等领域。
+								</br>
+							</p>
+						</div>
+					</div>
+			    </div>
+			    <div role="tabpanel" class="tab-pane" id="超高频RFID标签">
+			    	<br />
+					<div class="container jumbotron" style="background-color: white;">
+						<a href="bqcgpPFIDbq.html">
+							<button class="btn btn-primary" style="position: relative;float: right;">more</button>
+						</a>
+						<div class="col-sm-12">
+							<h3 style="text-align: center;"><strong>超高频RFID标签</strong></h3>
+						</div>
+						<div class="col-sm-12" style="text-align: center;color:rgb(90, 123, 187);">
+							<font>UHF RFID Tag</font>
+						</div>
+						<div class="col-sm-12">
+							<br />
+						</div>
+						<div class="col-sm-6">
+							<img src="img/AR-9032V.png" class="img-thumbnail" style="width: 70%;" />
+						</div>
+						<div class="col-sm-6">
+							<h4><strong>型号:</strong></h4><p>WB-T9032V</p><br />
+							<h4><strong>读取距离:</strong></h4><p>读距0--5.5米，读距与读写设备的功率有关</p>
+						</div>
+						<hr class="col-sm-12" />							
+						<div class="col-sm-6">
+							<img src="img/AR-9032TT.png" class="img-thumbnail" style="width: 70%;" />
+						</div><div class="col-sm-6">
+							<h4><strong>型号:</strong></h4><p>WB-T9032TT</p><br />
+							<h4><strong>读取距离:</strong></h4><p>读距0--1.5米，读距与读写设备的功率的有关</p>
+						</div>
+						<hr class="col-sm-12" />
+						<div class="col-sm-6">
+							<img src="img/AR-9032A.png" class="img-thumbnail" style="width: 70%;" />
+						</div><div class="col-sm-6">
+							<h4><strong>型号:</strong></h4><p>WB-T9032A</p><br />
+							<h4><strong>读取距离:</strong></h4><p>读距0--10米，读距与读写设备的功率的有关</p>
+						</div>
+						<hr class="col-sm-12" />
+						<div class="col-sm-6">
+							<img src="img/AR-9016C.png" class="img-thumbnail" style="width: 70%;" />
+						</div><div class="col-sm-6">
+							<h4><strong>型号:</strong></h4><p>WB-T9016C</p><br />
+							<h4><strong>读取距离:</strong></h4><p>读距0--8米，读距与读写设备的功率有关</p>
+						</div>
+						<hr class="col-sm-12" />
+						<div class="col-sm-6">
+							<img src="img/AR-9016E.png" class="img-thumbnail" style="width: 70%;" />
+						</div><div class="col-sm-6">
+							<h4><strong>型号:</strong></h4><p>WB-T9016E</p><br />
+							<h4><strong>读取距离:</strong></h4><p>读距0--1.5米</p>
+						</div>
+						<hr class="col-sm-12" />
+						<div class="col-sm-6">
+							<img src="img/AR-97018.png" class="img-thumbnail" style="width: 70%;" />
+						</div><div class="col-sm-6">
+							<h4><strong>型号:</strong></h4><p>WB-T97018</p><br />
+							<h4><strong>读取距离:</strong></h4><p>读距0--8米，读距与读写设备的功率有关</p>
+						</div>
+						<hr class="col-sm-12" />
+						<div class="col-sm-6">
+							<img src="img/AR-9001-X.png" class="img-thumbnail" style="width: 70%;" />
+						</div><div class="col-sm-6">
+							<h4><strong>型号:</strong></h4><p>WB-T9001-X</p><br />
+							<h4><strong>读取距离:</strong></h4><p>读距0--8米，读距与读写设备的功率有关</p>
+						</div>
+					</div>
+			    </div>
+			  </div>
+		
+		</div>
+		<div class="container-fluid foot" style="background-color: #eeeeee;">
+			<div class=" row " >
+				<div class="col-sm-2" style="text-indent: 2em;">
+					<br />
+					<p class="tit">关于物必连</p>
+					<a href="companyProfile.html"><p>公司简介</p></a>
+					<a href="honor.html"><p>荣誉奖励</p></a>
+					<a href="lxwm.html"><p>联系我们</p></a>
+				</div>
+				<div class="col-sm-2" style="text-indent: 2em;">
+					<br />
+					<p class="tit">招贤纳士</p>
+					<a href="#"><p>校园招聘</p></a>
+					<a href="#"><p>社会招聘</p></a>
+					<a href="#"><p>实习生</p></a>
+				</div>
+				<div class="col-sm-2" style="text-indent: 2em;">
+					<br/>
+					<p class="tit">产品&解决方案</p>
+					<a href="Product.html"><p>产品系列</p></a>
+					<a href="project.html"><p>解决方案</p></a>
+					<a href="fwzc.html"><p>售后服务</p></a>
+					<a href="#"><p>技术支持</p></a>
+				</div>
+				<div class="col-sm-1"></div>
+				<div class="col-sm-5">
+					<div class="col-sm-12">
+						<br/>
+						<img src="img/QRCode.jpg " class="img-thumbnail " style="width: 100px; height: 100px;margin-top: 5px;position: relative;float: left;" />
+						<div style="position: relative;float: left;text-indent: 2em;">
+							<p>杭州物必连科技有限公司</p>
+							<p>电话：0571-58687250</p>
+							<p>邮编：310000</p>
+							<p>邮箱：dhw@wbliot.com</p>
+						</div>
+					</div>
+					<div class="col-sm-12">
+						<p>版权所有 © 物必连科技有限公司 1998-2018  保留一切权利.</p>
+					</div>
+					<div class="col-sm-12">
+						<p>地址：浙江省杭州市西湖区三墩镇西园八路3号智汇众创中心E2 14层1411室</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script>
+			$(".cp li a").click(function(){
+				let aa=$(this).html();
+				localStorage.setItem("cp",aa);
+			})
+		</script>
+	</body>
+</html>
